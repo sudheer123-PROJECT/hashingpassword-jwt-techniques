@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <h2>My Profile</h2>
+
+        <p>
+            <strong>User ID:</strong>
+            <span id="userId"></span>
+        </p>
+
+        <p>
+            <strong>Username:</strong>
+            <span id="profileName"></span>
+        </p>
+
+        <p>
+            <strong>Email:</strong>
+            <span id="profileEmail"></span>
+        </p>
+
+        <h3>Update Username</h3>
+
+        <form id="updateForm">
+            <input
+                type="text"
+                id="newUsername"
+                placeholder="New username"
+                minlength="3"
+                maxlength="50"
+                required
+            >
+
+            <button type="submit">Update</button>
+        </form>
+
+        <p id="message" role="status"></p>
+
+        <button type="button" id="dashboardBtn">
+            Test Dashboard
+        </button>
+
+        <button type="button" id="logoutBtn">
+            Logout
+        </button>
+    </div>
+
+</body>
+</html>

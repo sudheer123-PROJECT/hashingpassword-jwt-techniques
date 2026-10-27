@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Create Account</h2>
+
+        <form id="registerForm">
+            <input
+                type="text"
+                id="username"
+                placeholder="Enter username"
+                minlength="3"
+                maxlength="50"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter email"
+                required
+            >
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter password"
+                minlength="8"
+                required
+            >
+
+            <button type="submit">Register</button>
+        </form>
+
+        <p id="message" role="status"></p>
+
+        <p>
+            Already registered?
+            <a href="login.html">Login</a>
+        </p>
+    </div>
+
+</body>
+</html>
